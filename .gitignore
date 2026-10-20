@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# secrets - never commit
+.env
+.env.*
+!.env.example
+
+# build output
+client/dist/
+dist/
+build/
+
+# uploaded images (folder is kept via .gitkeep)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# logs and OS / editor files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+coverage/
